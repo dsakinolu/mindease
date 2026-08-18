@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindEase — Design Showcase</title>
+  <meta name="description" content="From Figma to web: the design process behind MindEase, with prototype screens and notes by Sefunmi Akin-Olukunle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <a class="skip-link" href="#shots">Skip to screens</a>
+  <header class="app-header">
+    <div class="bar" style="max-width:1080px">
+      <a class="brand-mini" href="index.html">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#c9f2b8"/><path d="M11 24 q9 -14 18 0" fill="none" stroke="#1d2a7c" stroke-width="3.4" stroke-linecap="round"/><circle cx="14.5" cy="17" r="1.9" fill="#1d2a7c"/><circle cx="25.5" cy="17" r="1.9" fill="#1d2a7c"/></svg>
+        MindEase
+      </a>
+      <div class="hdr-actions">
+        <a class="icon-btn" href="index.html" style="text-decoration:none; padding-inline:1rem">Open the app →</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="showcase-hero">
+    <h1>From Figma to the web</h1>
+    <p>MindEase started as an interactive Figma prototype. These are the original design screens, each with a note on its role in the experience — alongside the working, accessible web version.</p>
+  </section>
+
+  <div class="showcase-wrap">
+    <div class="showcase-tools">
+      <button class="btn btn-outline" id="draft-toggle" type="button">✏️ Draft mode</button>
+      <button class="btn btn-primary" id="export-btn" type="button" hidden>⬇ Download showcase-data.js</button>
+      <button class="btn btn-quiet" id="add-card" type="button" hidden>＋ Add screen</button>
+    </div>
+    <div class="draft-banner" id="draft-banner" hidden>
+      Draft mode: click a card's image area to upload a Figma screenshot, edit the captions, then download the data file and replace <strong>js/showcase-data.js</strong> in your repo to publish.
+    </div>
+    <div class="shot-grid" id="shots"></div>
+  </div>
+
+  <footer class="site-footer" style="background:#1d2a7c; color:#fff; text-align:center; padding:2rem 1rem; font-weight:600">
+    <p>Designed &amp; built by Sefunmi Akin-Olukunle · <a href="https://dsakinolu.github.io/portfolio/" style="color:#c9f2b8">Portfolio</a></p>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="js/showcase-data.js"></script>
+  <script src="js/showcase.js"></script>
+</body>
+</html>
